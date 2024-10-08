@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        margin-left: 500px;
+        margin-right: 500px;
+        /* color: #c909bf; */
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .flex-item {
+        width: 50%;
+    }
+    img {
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+
+    <script>
+        // Create and style elements
+        var h1Cre = document.createElement("h1");
+        var creCenter = document.createElement("center");
+        var profilePic = document.createElement("img");
+        var eMail = document.createElement("p");
+        var centerr = document.createElement("center");
+        var emailLink = document.createElement("a");
+        emailLink.innerText = "katravathsreenu380@gmail.com";
+        centerr.append(emailLink);
+
+        var mobileNo = document.createElement("p");
+        mobileNo.innerText = "+91 6303437873";
+        var centro = document.createElement("center");
+        centro.append(mobileNo);
+
+        profilePic.src = "srinu.JPG";
+        profilePic.height = "120";
+        profilePic.width = "100";
+        profilePic.style.marginLeft = "85%";
+        profilePic.style.marginTop = "-80rem";
+
+        var creHorizontalLine = document.createElement("hr");
+
+        creCenter.append(h1Cre);
+        h1Cre.innerText = "KATRAVATH SRINU";
+
+        // Applying color using setattribute
+        h1Cre.setAttribute('style', 'color: darkblue ;');
+
+
+        const creCrrierObj = document.createElement("h3");
+        creCrrierObj.innerText = "Carrier Objective:";
+
+
+        // Applying color using setattribute
+        creCrrierObj.setAttribute('style','color: red;')
+
+
+        const creParObj = document.createElement("p");
+        creParObj.innerText = "Enthusiastic and detail-oriented Computer Science graduate with a strong foundation in software development and a passion for problem-solving. Seeking a software development role where I can leverage my skills in programming languages such as Java, Python, HTML/CSS, Bootstrap, JavaScript, React.js along with my understanding of algorithms and data structures, and grow into a well-rounded software engineer.";
+
+        const hrLine = document.createElement("hr");
+
+        var container = document.createElement("div");
+        container.className = "flex-container";
+
+        var techDiv = document.createElement("div");
+        techDiv.className = "flex-item";
+
+        var t = document.createElement("h3");
+        t.innerHTML = "Technical Skills";
+        t.setAttribute('style','color: red;')
+        t.className = "content";
+
+        var li1 = document.createElement("li");
+        li1.innerHTML = "Java";
+
+        var li2 = document.createElement("li");
+        li2.innerHTML = "Python";
+
+        var li3 = document.createElement("li");
+        li3.innerHTML = "JavaScript";
+
+        var li4 = document.createElement("li");
+        li4.innerHTML = "AWS";
+
+        var li5 = document.createElement("li");
+        li5.innerHTML = "GIT";
+
+        var li6 = document.createElement("li");
+        li6.innerHTML = "React";
+
+        var li7 = document.createElement("li");
+        li7.innerText = "SQL";
+
+        var ull = document.createElement("ul");
+        ull.append(li1, li2, li3, li4, li5, li6, li7);
+        ull.className = "content";
+
+        techDiv.appendChild(t);
+        techDiv.appendChild(ull);
+
+        var hobbyDiv = document.createElement("div");
+        hobbyDiv.className = "flex-item";
+
+        var hh = document.createElement("h3");
+        hh.innerHTML = "Hobbies";
+        hh.setAttribute('style','color: red;')
+        hh.className = "content";
+
+        var ll1 = document.createElement("li");
+        ll1.innerHTML = "Playing Games";
+
+        var ll2 = document.createElement("li");
+        ll2.innerHTML = "Listening to Music";
+
+        var ll3 = document.createElement("li");
+        ll3.innerHTML = "Watching Movies";
+
+        var ll4 = document.createElement("li");
+        ll4.innerHTML = "Annoying Friends";
+
+        var ll5 = document.createElement("li");
+        ll5.innerHTML = "Reading Books";
+
+        var ulll = document.createElement("ul");
+        ulll.append(ll1, ll2, ll3, ll4, ll5);
+        ulll.className = "content";
+
+        hobbyDiv.appendChild(hh);
+        hobbyDiv.appendChild(ulll);
+
+        container.appendChild(techDiv);
+        container.appendChild(hobbyDiv);
+
+        const hr2 = document.createElement("hr");
+        hr2.className = "content";
+        hr2.style.marginTop = "0";
+
+        var con = document.createElement("h3");
+        con.innerHTML = "Conclusion";
+        con.className = "content";
+        con.setAttribute('style','color: red;')
+
+        var par2 = document.createElement("p");
+        par2.innerHTML = "As a motivated and eager-to-learn individual, I am excited to bring my fresh perspective and strong foundational skills to your company. I am confident in my ability to contribute effectively to your team, and I am eager to take on new challenges that will allow me to grow both personally and professionally.";
+        par2.className = "content";
+
+        var hr3 = document.createElement("hr");
+        hr3.style.marginTop = "0";
+
+        var bot = document.createElement("pre");
+        bot.innerHTML = " Katravath Srinu                                          16/08/2024                                sign:";
+
+        var sigg = document.createElement("img");
+        sigg.src = "sign.jpg";
+        sigg.style.width = "100px";
+        sigg.style.marginLeft = "85%";
+        sigg.style.transform = "translateY(-100%)";
+
+        document.body.setAttribute("style","background-color: #bee9da");
+
+
+
+        
+        document.body.append(creCenter, centerr, centro, profilePic, creHorizontalLine, creCrrierObj, creParObj, hrLine, container, hr3, hr2, con, par2, hr3, bot, sigg);
+    </script>
+
+</body>
+</html>

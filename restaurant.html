@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin-left:400px;
+            margin-top: 30px;
+            margin-right: 150px;
+        }
+        .flex-item {
+            width: 50%;
+        }
+        th{
+            background-color: rgb(225, 221, 216);
+        }
+    </style>
+<body>
+    
+
+    <script>
+
+
+        var na = document.createElement("h1");
+        na.style.textAlign = "center"
+        na.innerHTML = "Roll On Coal"; 
+        na.style.backgroundColor = "red";
+        na.style.color = "white"
+        na.style.marginTop = "20px";
+
+
+        var imgg = document.createElement("img");
+        imgg.src = "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+        imgg.style.width = "100%";
+        // imgg.style.marginTop = "20px";
+        // imgg.style.marginLeft = "500px";
+
+        var container = document.createElement("div");
+        container.className = "flex-container";
+
+        var nonveg = document.createElement("div");
+        nonveg.className = "flex-item";
+        
+
+
+        var thead = document.createElement("thead")
+        var tbody = document.createElement("tbody")
+
+        var trow = document.createElement("tr")
+        var thcol = document.createElement("th")
+        thcol.innerText = "Non Veg-Menu"
+        thcol.setAttribute("colspan", "3");
+        thcol.style.bordercollapse = "collapse"
+        thcol.style.border = "2px solid black"
+        trow.appendChild(thcol)
+        thead.appendChild(trow)
+
+        var colrow = document.createElement("tr")
+        var hd1 = document.createElement("th")
+        hd1.innerText = "sno"
+        hd1.style.bordercollapse = "collapse"
+        hd1.style.border = "2px solid "
+        var hd2 = document.createElement("th")
+        hd2.innerText = "Items"
+        hd2.style.border = "2px solid black"
+        var hd3 = document.createElement("th")
+        hd3.innerText = "price"
+        hd3.style.border = "2px solid black"
+
+        colrow.append(hd1,hd2,hd3)
+
+        var itrow = document.createElement("tr");
+
+        var itcol11 = document.createElement("th");
+        itcol11.style.border = "2px solid black";
+        var itcol12 = document.createElement("th");
+        itcol12.style.border = "2px solid black"; 
+        var itcol13 = document.createElement("th");
+        itcol13.style.border = "2px solid black";  
+
+        itcol11.innerText = "1";
+        itcol12.innerText = "Butter chicken";
+        itcol13.innerText = "1299/-";
+
+        itrow.append(itcol11, itcol12, itcol13);
+
+
+        var itrow2 = document.createElement("tr");
+
+        var i21 = document.createElement("th");
+        i21.style.border = "2px solid black";
+        var i22 = document.createElement("th");
+        i22.style.border = "2px solid black"; 
+        var i23 = document.createElement("th");
+        i23.style.border = "2px solid black";  
+
+        i21.innerText = "2";
+        i22.innerText = "Margherita Pizza";
+        i23.innerText = "1999/-";
+
+        itrow2.append(i21, i22, i23);
+
+        var itrow3 = document.createElement("tr");
+
+        var i21 = document.createElement("th");
+        i21.style.border = "2px solid black";
+        var i22 = document.createElement("th");
+        i22.style.border = "2px solid black"; 
+        var i23 = document.createElement("th");
+        i23.style.border = "2px solid black";  
+
+        i21.innerText = "3";
+        i22.innerText = "Spaghetti Carbonara";
+        i23.innerText = "2999/-";
+
+        itrow3.append(i21, i22, i23);
+        var itrow4 = document.createElement("tr");
+
+        var i21 = document.createElement("th");
+        i21.style.border = "2px solid black";
+        var i22 = document.createElement("th");
+        i22.style.border = "2px solid black"; 
+        var i23 = document.createElement("th");
+        i23.style.border = "2px solid black";  
+
+        i21.innerText = "4";
+        i22.innerText = "Apollo Fish";
+        i23.innerText = "2599/-";
+
+        itrow4.append(i21, i22, i23);
+
+        tbody.append(itrow,itrow2,itrow3,itrow4)
+
+        nonveg.append(thead,colrow,tbody)
+
+
+
+         // veg menu
+
+        var thead = document.createElement("thead")
+        var tbody = document.createElement("tbody")
+
+        var veg = document.createElement("div");
+        veg.className = "flex-item";
+
+        var trow = document.createElement("tr")
+        var thcol = document.createElement("th")
+        thcol.innerText = "Veg-Menu"
+        thcol.setAttribute("colspan", "3");
+        thcol.style.bordercollapse = "collapse"
+        thcol.style.border = "2px solid black"
+        trow.appendChild(thcol)
+        thead.appendChild(trow)
+
+        var colrow = document.createElement("tr")
+        var hd1 = document.createElement("th")
+        hd1.innerText = "sno"
+        hd1.style.bordercollapse = "collapse"
+        hd1.style.border = "2px solid "
+        var hd2 = document.createElement("th")
+        hd2.innerText = "Items"
+        hd2.style.border = "2px solid black"
+        var hd3 = document.createElement("th")
+        hd3.innerText = "price"
+        hd3.style.border = "2px solid black"
+
+        colrow.append(hd1,hd2,hd3)
+
+        var itrow = document.createElement("tr");
+
+        var itcol11 = document.createElement("th");
+        itcol11.style.border = "2px solid black";
+        var itcol12 = document.createElement("th");
+        itcol12.style.border = "2px solid black"; 
+        var itcol13 = document.createElement("th");
+        itcol13.style.border = "2px solid black";  
+
+        itcol11.innerText = "1";
+        itcol12.innerText = "Butter Paneer";
+        itcol13.innerText = "1299/-";
+
+        itrow.append(itcol11, itcol12, itcol13);
+
+
+        var itrow2 = document.createElement("tr");
+
+        var i21 = document.createElement("th");
+        i21.style.border = "2px solid black";
+        var i22 = document.createElement("th");
+        i22.style.border = "2px solid black"; 
+        var i23 = document.createElement("th");
+        i23.style.border = "2px solid black";  
+
+        i21.innerText = "2";
+        i22.innerText = "Margherita Pizza";
+        i23.innerText = "1999/-";
+
+        itrow2.append(i21, i22, i23);
+
+        var itrow3 = document.createElement("tr");
+        var i21 = document.createElement("th");
+        i21.style.border = "2px solid black";
+        var i22 = document.createElement("th");
+        i22.style.border = "2px solid black"; 
+        var i23 = document.createElement("th");
+        i23.style.border = "2px solid black";  
+
+        i21.innerText = "3";
+        i22.innerText = "Cheese Cake";
+        i23.innerText = "2999/-";
+
+        itrow3.append(i21, i22, i23);
+
+        var itrow4 = document.createElement("tr");
+
+        var i21 = document.createElement("th");
+        i21.style.border = "2px solid black";
+        var i22 = document.createElement("th");
+        i22.style.border = "2px solid black"; 
+        var i23 = document.createElement("th");
+        i23.style.border = "2px solid black";  
+
+        i21.innerText = "4";
+        i22.innerText = "Veg Mix Pizza";
+        i23.innerText = "2599/-";
+
+        itrow4.append(i21, i22, i23);
+
+        tbody.append(itrow,itrow2,itrow3,itrow4)
+
+        veg.append(thead,colrow,tbody)
+
+        container.appendChild(nonveg)
+        container.appendChild(veg)
+
+        
+
+        document.body.append(na,imgg,container)
+
+    </script>
+</body>
+</html>
+
+
+
+
